@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="4">
+
+  <testsuite name="login.test"
+    errors="0" failures="0" hostname="" id="" package="login.test" skipped="0"
+    tests="4" time="30.14" timestamp="">
+  
+    <testcase name="login com sucesso" classname="login.test" time="9.620" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="quando eu acesso a pagina de login" classname="login.test" time="16.99" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="e faco login com sucesso" classname="login.test" time="1.943" assertions="0">
+    </testcase>
+  
+    <testcase name="entao devo ver a area logada" classname="login.test" time="1.588" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

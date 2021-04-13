@@ -1,0 +1,24 @@
+{
+  "name": "zumbis-project",
+  "version": "1.0.0",
+  "description": "projeto de testes automatizados com nightwatch",
+  "main": "index.js",
+  "dependencies": {
+    "chromedriver": "^89.0.0"
+  },
+  "devDependencies": {
+    "geckodriver": "^1.22.3",
+    "nightwatch": "^1.6.2"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/nightwatch"
+  },
+  "keywords": [
+    "nodejs",
+    "webdriver",
+    "chromedriver",
+    "geckodriver"
+  ],
+  "author": "David Halison",
+  "license": "ISC"
+}
