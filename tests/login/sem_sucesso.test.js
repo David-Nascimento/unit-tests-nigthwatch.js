@@ -1,4 +1,15 @@
 module.exports = {
+
+    before: (browser) => {
+        browser
+        .resizeWindow(1920, 1000)
+    },
+
+    after: (browser) => {
+        browser
+        .end();
+    },
+
     'login sem sucesso': (browser) => {
         let login = '#txtUsername'
         let senha = '#txtPassword'
@@ -24,6 +35,7 @@ module.exports = {
         .click(btnLogar)
         .assert.containsText('#spanMessage', "Username cannot be empty")
     },
+    
     'senha nao informado': (browser) => {
         let login = '#txtUsername'
         let senha = '#txtPassword'
@@ -35,6 +47,5 @@ module.exports = {
         .setValue(senha, '')
         .click(btnLogar)
         .assert.containsText('#spanMessage', "Password cannot be empty")
-        .end();
     }
 }
