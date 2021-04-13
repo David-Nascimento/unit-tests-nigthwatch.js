@@ -1,6 +1,5 @@
-1618275518692	geckodriver	INFO	Listening on 127.0.0.1:4444
-1618275519479	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileHyNrTL"
+1618275806036	geckodriver	INFO	Listening on 127.0.0.1:4444
+1618275806940	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileUYCC6W"
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-1618275528919	Marionette	INFO	Listening on port 38735
-1618275532661	Marionette	INFO	Stopped listening on port 38735
-JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+1618275815909	Marionette	INFO	Listening on port 45979
+1618275821785	Marionette	INFO	Stopped listening on port 45979

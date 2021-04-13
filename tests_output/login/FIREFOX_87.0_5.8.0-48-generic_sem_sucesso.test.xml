@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="0"
-            tests="1">
+            tests="3">
 
   <testsuite name="login.sem_sucesso.test"
     errors="0" failures="0" hostname="" id="" package="login" skipped="0"
-    tests="1" time="5.057" timestamp="">
+    tests="3" time="7.106" timestamp="">
   
-    <testcase name="login sem sucesso" classname="login.sem_sucesso.test" time="5.057" assertions="2">
+    <testcase name="login sem sucesso" classname="login.sem_sucesso.test" time="3.499" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="email nao informado" classname="login.sem_sucesso.test" time="1.061" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="senha nao informado" classname="login.sem_sucesso.test" time="2.546" assertions="2">
 
     
 
