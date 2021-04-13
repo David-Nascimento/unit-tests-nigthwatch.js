@@ -25,4 +25,22 @@ npm install geckodriver
 > node_modules/.bin/geckodriver
 ```
 
+### Insatalar modulos do Babel
+```
+npm i babel-cli --save-dev
+
+npm i babel-plugin-add-module-exports --save-dev
+
+npm i babel-preset-es2015 --save-dev
+```
+
+### Criar um arquivo .babelrc na raiz do projetoe configurar o ES6
+```
+{
+ "presets": ["es2015"],
+ "plugins": ["babel-plugin-add-module-exports"]
+}
+
+```
+
 [Gitflow](https://github.com/David-Nascimento/unit-tests-nigthwatch.js/commits/main)
