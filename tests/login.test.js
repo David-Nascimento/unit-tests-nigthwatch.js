@@ -1,6 +1,6 @@
 
 module.exports = {
-    'login com sucesso': function(browser) {
+    'login com sucesso': (browser) => {
         let login = '#txtUsername'
         let senha = '#txtPassword'
         let btnLogar = '#btnLogin'
@@ -20,7 +20,7 @@ module.exports = {
         .waitForElementVisible('#divLogo', 3000)
     },
 
-    'e faco login com sucesso': function(browser) {
+    'e faco login com sucesso': (browser) => {
         let login = '#txtUsername'
         let senha = '#txtPassword'
         let btnLogar = '#btnLogin'
@@ -30,7 +30,7 @@ module.exports = {
         .click(btnLogar)
     },
 
-    'entao devo ver a area logada': function(browser){
+    'entao devo ver a area logada': (browser) => {
         browser
         .waitForElementVisible('#welcome')
         .assert.containsText('#welcome', 'Welcome Paul')
