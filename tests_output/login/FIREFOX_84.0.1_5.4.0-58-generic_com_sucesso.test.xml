@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="login.com_sucesso.test"
+    errors="0" failures="1" hostname="" id="" package="login" skipped="0"
+    tests="1" time="9.018" timestamp="">
+  
+    <testcase name="login com sucesso" classname="login.com_sucesso.test" time="9.018" assertions="2">
+
+      <failure message="Testing if element &lt;#welcome&gt; contains text &#39;Welcome Paul&#39; in 5000ms - expected &#34;contains text &#39;Welcome Paul&#39;&#34; but got: &#34;does not contain &#39;Welcome Paul&#39;&#34; (5344ms)">    at Object.loginComSucesso [as login com sucesso] (/home/tallos/Documentos/unit-tests-nigthwatch.js/tests/login/com_sucesso.test.js:10:17)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

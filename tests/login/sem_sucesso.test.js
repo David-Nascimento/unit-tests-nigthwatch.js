@@ -18,6 +18,7 @@ module.exports = {
         .setValue('@senha', 'admin')
         .click('@btnLogar')
         .assert.containsText('#spanMessage', "Invalid credentials")
+        .saveScreenshot('tests_output/screenshots.png')
     },
 
     'email nao informado': (browser) => {
