@@ -13,10 +13,7 @@ module.exports = {
     'login sem sucesso': (browser) => {
         let login = browser.page.login()
         login.navigate()
-        .waitForElementVisible('@form', 3000)
-        .setValue('@login', 'Admin')
-        .setValue('@senha', 'admin')
-        .click('@btnLogar')
+        .whith('Admin','admin')
         .assert.containsText('#spanMessage', "Invalid credentials")
         .saveScreenshot('tests_output/screenshots.png')
     },
@@ -24,20 +21,14 @@ module.exports = {
     'email nao informado': (browser) => {
         let login = browser.page.login()
         login.navigate()
-        .waitForElementVisible('@form', 3000)
-        .setValue('@login', '')
-        .setValue('@senha', 'admin123')
-        .click('@btnLogar')
+        .whith('','admin123')
         .assert.containsText('#spanMessage', "Username cannot be empty")
     },
 
     'senha nao informado': (browser) => {
         let login = browser.page.login()
         login.navigate()
-        .waitForElementVisible('@form', 3000)
-        .setValue('@login', 'Admin')
-        .setValue('@senha', '')
-        .click('@btnLogar')
+        .whith('Admin','')
         .assert.containsText('#spanMessage', "Password cannot be empty")
     }
 }
