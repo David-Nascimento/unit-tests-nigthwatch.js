@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="login.sem_sucesso.test"
+    errors="1" failures="0" hostname="" id="" package="login" skipped="2"
+    tests="1" time="0.06100" timestamp="">
+  
+    <testcase name="login sem sucesso" classname="login.sem_sucesso.test" time="0.06100" assertions="0">
+    <error message="login.navigate(...).whith is not a function" type="error"><![CDATA[
+    TypeError: login.navigate(...).whith is not a function
+    at Object.loginSemSucesso [as login sem sucesso] (/home/david/Documentos/zumbis-project/tests/login/sem_sucesso.test.js:6:10)
+    at Context.call (/home/david/Documentos/zumbis-project/node_modules/nightwatch/lib/testsuite/context.js:375:35)
+    at TestCase.run (/home/david/Documentos/zumbis-project/node_modules/nightwatch/lib/testsuite/testcase.js:53:31)
+    at Runnable.__runFn (/home/david/Documentos/zumbis-project/node_modules/nightwatch/lib/testsuite/index.js:376:80)
+    at Runnable.run (/home/david/Documentos/zumbis-project/node_modules/nightwatch/lib/testsuite/runnable.js:123:21)
+    at TestSuite.createRunnable (/home/david/Documentos/zumbis-project/node_modules/nightwatch/lib/testsuite/index.js:443:33)
+    at TestSuite.handleRunnable (/home/david/Documentos/zumbis-project/node_modules/nightwatch/lib/testsuite/index.js:448:18)
+    at /home/david/Documentos/zumbis-project/node_modules/nightwatch/lib/testsuite/index.js:376:21
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at DefaultRunner.runTestSuite (/home/david/Documentos/zumbis-project/node_modules/nightwatch/lib/runner/test-runners/default.js:68:7)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+        TypeError: login.navigate(...).whith is not a function
+   - writing an ES6 async test case? - keep in mind that commands return a Promise; 
+   - writing unit tests? - make sure to specify &#34;unit_tests_mode=true&#34; in your config.
+       at Object.loginComSucesso [as login com sucesso] (/home/david/Documentos/zumbis-project/tests/login/com_sucesso.test.js:6:10)
+       at processTicksAndRejections (internal/process/task_queues.js:93:5)
+  TypeError: login.navigate(...).whith is not a function
+   - writing an ES6 async test case? - keep in mind that commands return a Promise; 
+   - writing unit tests? - make sure to specify &#34;unit_tests_mode=true&#34; in your config.
+       at Object.loginSemSucesso [as login sem sucesso] (/home/david/Documentos/zumbis-project/tests/login/sem_sucesso.test.js:6:10)
+       at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    </system-err>
+  
+
+    
+
+  
+    
+    <testcase
+      name="email nao informado" classname="login.sem_sucesso.test">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="senha nao informado" classname="login.sem_sucesso.test">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

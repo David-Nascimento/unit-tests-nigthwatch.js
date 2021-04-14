@@ -1,11 +1,11 @@
 var loginAction = {
-    whith: function(email, pass) {
+    with: function (email, pass) {
         return this
         .navigate()
-        .waitForElementVisible('@form', 3000)
         .setValue('@login', email)
         .setValue('@senha', pass)
         .click('@btnLogar')
+        .assert.containsText('#spanMessage', "Invalid credentials")
     }
 }
 

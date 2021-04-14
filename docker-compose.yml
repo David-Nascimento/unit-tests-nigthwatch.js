@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+
+  my-service-postgres:
+    image: 'postgres:9.6-alpine'
+    environment:
+      POSTGRES_DB: 'postgres'
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: 'postgres'
+    volumes:
+      - './initdb.sql:/docker-entrypoint-initdb.d/initdb.sql'
+      - './db/data:/var/lib/postgresql/data'
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 10s
+      retries: 6
+
+  my-service-redis:
+    image: 'redis:4.0-alpine'
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 10s
+      retries: 6
+
+  my-service-api:
+    image: node:10.10.0-alpine
+    depends_on:
+      - my-service-postgres
+      - my-service-redis
+    build: .
+    ports:
+      - '3000:3000'
+    volumes:
+      - '.:/opt/my-service'
+    env_file:
+      - '.env'
+    restart: on-failure
