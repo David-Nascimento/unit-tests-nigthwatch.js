@@ -5,12 +5,14 @@
 
   <testsuite name="novo_funcionario.test"
     errors="0" failures="0" hostname="" id="" package="novo_funcionario.test" skipped="0"
-    tests="2" time="0.01500" timestamp="">
+    tests="2" time="12.31" timestamp="">
   
-    <testcase name="Dado que eu tenho um novo funcionario para cadastro" classname="novo_funcionario.test" time="0.006000" assertions="0">
+    <testcase name="Dado que eu tenho um novo funcionario para cadastro" classname="novo_funcionario.test" time="0.003000" assertions="0">
     </testcase>
   
-    <testcase name="Quando eu faco o cadastro do novo funcionario" classname="novo_funcionario.test" time="0.009000" assertions="0">
+    <testcase name="Quando eu faco o cadastro do novo funcionario" classname="novo_funcionario.test" time="12.30" assertions="1">
+
+    
     </testcase>
   
 

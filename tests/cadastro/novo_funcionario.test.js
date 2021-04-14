@@ -15,6 +15,10 @@ module.exports = {
     },
 
     'Quando eu faco o cadastro do novo funcionario': function(browser) {
-        console.log(cadastroFuncionario)
+        let novoFuncionario = browser.page.novo_funcionario()
+
+        novoFuncionario
+            .with('David', 'Nascimento', 'Rua 70', 'testes@testes.com.br', '85 99419-4958')
+            .selectCheckBox()
     }
 }
