@@ -5,7 +5,11 @@ var loginAction = {
         .setValue('@login', email)
         .setValue('@senha', pass)
         .click('@btnLogar')
-        .assert.containsText('#spanMessage', "Invalid credentials")
+    },
+
+    alertAsserts: function (alerts) {
+        return this
+        .assert.containsText('#spanMessage', alerts)
     }
 }
 
