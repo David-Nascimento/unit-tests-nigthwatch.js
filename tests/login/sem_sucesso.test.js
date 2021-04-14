@@ -2,8 +2,8 @@ module.exports = {
     'login sem sucesso': (browser) => {
         let login = browser.page.login()
         login
-        .whith('Admin','admin')
-        .alertAssert("Invalid credentials")
+        .with('Admin','admin')
+        .alertAsserts("Invalid credentials")
         .saveScreenshot('tests_output/screenshots.png')
     }
 }

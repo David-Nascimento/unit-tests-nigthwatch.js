@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="1"
+            tests="1">
+
+  <testsuite name="login.com_sucesso.test"
+    errors="1" failures="1" hostname="" id="" package="login" skipped="0"
+    tests="1" time="10.07" timestamp="">
+  
+    <testcase name="login com sucesso" classname="login.com_sucesso.test" time="10.07" assertions="1">  <failure message="Testing if element &lt;#spanMessage&gt; contains text &#39;Welcome Paul&#39; in 5000ms - expected &#34;contains text &#39;Welcome Paul&#39;&#34; but got: &#34;element could not be located&#34; (5319ms)">    at Page.alertAsserts (/home/david/Documentos/zumbis-project/pages/login.js:12:17)
+    at Object.loginComSucesso [as login com sucesso] (/home/david/Documentos/zumbis-project/tests/login/com_sucesso.test.js:7:10)</failure>
+
+    
+    <error message="Error while running &#34;containsText&#34; command: Testing if element [0;33m&lt;#spanMessage&gt;[0m contains text [0;33m&#39;Welcome Paul&#39;[0m in 5000ms - expected [0;32m&#34;contains text &#39;Welcome Paul&#39;&#34;[0m but got: [0;31m&#34;element could not be located&#34;[0m [0;90m(5319ms)[0m" type="error"><![CDATA[
+        at Page.alertAsserts (/home/david/Documentos/zumbis-project/pages/login.js:12:17)
+    at Object.loginComSucesso [as login com sucesso] (/home/david/Documentos/zumbis-project/tests/login/com_sucesso.test.js:7:10)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+        NoSuchElementError: An error occurred while running .getText() command on &lt;#spanMessage&gt;: 
+   {&#34;sessionId&#34;:&#34;e0738e5aab8de99c114e9e07f1afdac9&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}
+       at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
